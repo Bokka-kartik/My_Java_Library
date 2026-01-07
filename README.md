@@ -14,6 +14,14 @@ Here a Preview of JDBC in Servlet
 This project is a Java web application built using **Servlets**, **JSP**, and **JDBC** to interact with a relational database.  
 It demonstrates basic CRUD operations (Create, Read, Update, Delete) using Java EE technologies and database connectivity via JDBC.
 
+#Project Structure 
+├── src/main/java/             # Java source
+│   ├── com/example/servlet/   # Servlet classes
+├── src/main/webapp/           # JSP and web resources
+├── pom.xml                    # Maven build file
+├── README.md                  # Project overview
+
+
 ## Features
 
 - Connects to a MySQL (or other) database using JDBC

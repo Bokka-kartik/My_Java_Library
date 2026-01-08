@@ -46,3 +46,7 @@ Before running this project locally, ensure you have installed:
 - Apache Tomcat 8.x/9.x/10.x
 - MySQL Database (or another JDBC-supported database)
 - Maven 3.x
+
+##Keep in Mind
+-you must load the servlet.jar file in the web-inf folder to load the necessary Annotation.
+-also to run the jdbc in the web we need to load the mysql connector to the web servlet at the run time rather then the file itself

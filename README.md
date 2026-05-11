@@ -10,21 +10,25 @@ Backend: Java Servlets / Spring Boot
 Database: MySQL
 Server: Apache Tomcat (if using Servlets/JSP)
 
-# Project Structure
+## 📂 Project Structure
 
+```
 src/
 └── main/
-    ├── java/com/entrypoint/
-    │   ├── controller/     → Handles incoming HTTP requests
-    │   ├── service/        → Contains business logic
-    │   ├── repository/     → Manages database operations
-    │   └── model/entity/   → Defines application data models
+    ├── java/
+    │   └── com/
+    │       └── entrypoint/
+    │           ├── controller/     # Handles HTTP requests
+    │           ├── repository/     # Database operations (CRUD)
+    │           ├── model/
+    │           │   └── entity/     # Data entities (Student, Job, etc.)
+    │           └── service/        # Business logic
     │
-    ├── resources/          → Configuration files (application.properties)
-    └── webapp/             → Frontend files (if applicable)
+    ├── resources/                 # Configuration files
+    └── webapp/                    # Frontend (if applicable)
 
-📄 pom.xml                 → Maven dependency management
-
+pom.xml                            # Maven dependencies
+```
 
 # Contribution
 if any updation care Pull requests and issues are welcome. Let's improve education tech together!

@@ -10,17 +10,20 @@ Backend: Java Servlets / Spring Boot
 Database: MySQL
 Server: Apache Tomcat (if using Servlets/JSP)
 
-# Project Structure 
+# Project Structure
+
 src/
-├── main/
-│   ├── java/
-│   │   └── com/Entry-point/
-│   │       ├── controller/  # Request handling
-│   │       ├── repository /         # Database operations
-│   │       ├── model/entity/       # Data entities (Student, Job, etc.)
-│   │       └── service/        # Database connection utilities/and  Business logic
-│
-├── ── ── ── ──pom.xml      # dependences management 
+└── main/
+    ├── java/com/entrypoint/
+    │   ├── controller/     → Handles incoming HTTP requests
+    │   ├── service/        → Contains business logic
+    │   ├── repository/     → Manages database operations
+    │   └── model/entity/   → Defines application data models
+    │
+    ├── resources/          → Configuration files (application.properties)
+    └── webapp/             → Frontend files (if applicable)
+
+📄 pom.xml                 → Maven dependency management
 
 
 # Contribution

@@ -45,16 +45,16 @@ Requires a JDK 17 or later:
 
 ```powershell
 Set-Location Student_Job-Portal-Management
-.\mvnw.cmd test
+mvn test
 ```
 
 ## Repository layout
 
 ```text
 Java/
-├── Hibernate_Understanding/
-├── JDBC_Servlet/
-└── Student_Job-Portal-Management/
+|-- Hibernate_Understanding/
+|-- JDBC_Servlet/
+\-- Student_Job-Portal-Management/
 ```
 
 Maven `target/` folders, compiled classes, and other generated `build/` output

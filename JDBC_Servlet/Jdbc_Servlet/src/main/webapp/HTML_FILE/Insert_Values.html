@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="../Practice2" method="post">
+  <p>Insert Into the Table</p>
+
+  <label>
+    <input type="radio" name="a" value="yes" onclick="toggleFields()">
+    Yes
+  </label>
+
+  <label>
+    <input type="radio" name="a" value="no" onclick="toggleFields()">
+    No
+  </label>
+
+  <div id="b" style="display: none; margin-top: 10px;">
+    <input type="text" placeholder="Name" name="Name"><br><br>
+    <input type="number" placeholder="Age" name="Age">
+    <br><br>
+    <input type="number" placeholder="Salary" name="Salary">
+  </div>
+  
+  <br>
+  <br>
+  <button type="submit">Submit</button>
+</form>
+
+<script src="Index.js"></script>
+</body>
+
+</html>

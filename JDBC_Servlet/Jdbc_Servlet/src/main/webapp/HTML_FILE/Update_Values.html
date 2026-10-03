@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<form action="../Update_Value" method="post">
+
+	<p>	Select If You Want to Update Data </p>
+		<label> 
+		<input type="radio" name="a" value="yes" onclick="value1()">Yes
+		</label>
+		
+		 <label> 
+		 <input type="radio" name="a" value="no" onclick="value1()">No
+		</label>
+
+		<div id="find" style="display: none; margin-top: 10px;">
+			<input type="number" name="salary" placeholder="Salary"><br>
+			<br> <input type="number" name="id" placeholder="Id"><br>
+			<br>
+		</div>
+		<br> <br>
+		<button type="submit">Submit</button>
+	</form>
+
+<script src="Index.js"></script>
+</body>
+</html>

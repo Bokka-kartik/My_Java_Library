@@ -1,4 +1,4 @@
-# Student_Job-Portal-Management-
+# Student Job Portal Management
 
 A comprehensive web-based platform designed to bridge the gap between students seeking career opportunities and employers looking for fresh talent. This system streamlines job postings, application tracking, and profile management.
 

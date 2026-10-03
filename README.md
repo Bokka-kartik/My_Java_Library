@@ -8,9 +8,9 @@ instructions; there is no shared root build.
 
 | Project | Description | Main technologies |
 | --- | --- | --- |
-| [Hibernate Understanding](./Hibernate_Understanding/) | Small examples for Hibernate ORM, entities, and database access. | Java, Hibernate, Maven, MySQL Connector/J |
-| [JDBC Servlet](./JDBC_Servlet/) | A servlet-based web application demonstrating JDBC database operations. | Java, Servlets, JSP, JDBC, Tomcat |
-| [Student Job Portal Management](./Student_Job-Portal-Management/) | A web application for student profiles, job listings, and applications. | Java 17, Spring Boot, Spring Data JPA, MySQL |
+| [Project1 - Hibernate Understanding](./Project1/) | Small examples for Hibernate ORM, entities, and database access. See its [README](./Project1/README.md) for build and database setup. | Java, Hibernate, Maven, MySQL Connector/J |
+| [Project2 - JDBC Servlet](./Project2/) | A servlet-based web application demonstrating JDBC database operations. | Java, Servlets, JSP, JDBC, Tomcat |
+| [Project3 - Student Job Portal Management](./Project3/) | A web application for student profiles, job listings, and applications. | Java 17, Spring Boot, Spring Data JPA, MySQL |
 
 ## Working with a project
 
@@ -22,7 +22,7 @@ remain isolated from the others.
 Requires Maven and a JDK:
 
 ```powershell
-Set-Location Hibernate_Understanding
+Set-Location Project1
 mvn package
 ```
 
@@ -31,7 +31,7 @@ mvn package
 The project includes a WAR file and a Dockerfile for running it with Tomcat:
 
 ```powershell
-Set-Location JDBC_Servlet
+Set-Location Project2
 docker build -t jdbc-servlet .
 docker run --rm -p 8080:8080 jdbc-servlet
 ```
@@ -44,7 +44,7 @@ setup.
 Requires a JDK 17 or later:
 
 ```powershell
-Set-Location Student_Job-Portal-Management
+Set-Location Project3
 mvn test
 ```
 
@@ -52,9 +52,9 @@ mvn test
 
 ```text
 Java/
-|-- Hibernate_Understanding/
-|-- JDBC_Servlet/
-\-- Student_Job-Portal-Management/
+|-- Project1/  (Hibernate Understanding)
+|-- Project2/  (JDBC Servlet)
+\-- Project3/  (Student Job Portal Management)
 ```
 
 Maven `target/` folders, compiled classes, and other generated `build/` output
